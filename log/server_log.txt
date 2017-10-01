@@ -1,0 +1,7 @@
+Connected to 3000
+1-function getMonth() { [native code] }-2017/1:18:42/tConnected to 3000
+1-9-2017/1:19:18	Connected to 3000
+2-10-2017/1:20:1	Connected to 3000
+2-10-2017/1:20:19	Connected to 3000
+2-10-2017/1:21:11	Open server at 3000
+2-10-2017/1:21:56	start server
