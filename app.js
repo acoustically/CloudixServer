@@ -5,5 +5,5 @@ let port = 3000;
 let logger = (require('./src/logger')).logger;
 
 app.listen(port, ()=> {
-  logger.log(`start server\n`);
+  logger.log('start server');
 });

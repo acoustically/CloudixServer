@@ -3,7 +3,7 @@ class Logger {
     this.fs = require('fs');
   }
   log(string) {
-    let log = this._get_current_time() + "\t" + string;
+    let log = this._get_current_time() + "\t" + string + "\n";
     console.log(log);
     this.fs.appendFile("./log/server_log.txt", log, 'utf8', (err)=> {
       if(err) {
