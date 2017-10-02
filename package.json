@@ -18,6 +18,8 @@
   "homepage": "https://github.com/acoustically/Cloudix_server#readme",
   "dependencies": {
     "babel": "^6.23.0",
-    "express": "^4.16.1"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1",
+    "mysql": "^2.14.1"
   }
 }

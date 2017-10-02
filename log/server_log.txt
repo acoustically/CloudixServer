@@ -5,3 +5,342 @@ Connected to 3000
 2-10-2017/1:20:19	Connected to 3000
 2-10-2017/1:21:11	Open server at 3000
 2-10-2017/1:21:56	start server
+2-10-2017/20:34:59	start server
+2-10-2017/20:36:4	start server
+2-10-2017/20:36:57	start server
+2-10-2017/20:37:28	start server
+2-10-2017/20:38:15	start server
+2-10-2017/20:38:29	start server
+2-10-2017/20:38:45	start server
+2-10-2017/21:34:48	start server
+2-10-2017/21:35:38	start server
+2-10-2017/21:40:0	start server
+2-10-2017/21:40:59	start server
+2-10-2017/22:8:19	start server
+2-10-2017/22:10:0	start server
+2-10-2017/22:10:18	start server
+2-10-2017/22:10:22	RDS connect error
+2-10-2017/22:10:51	start server
+2-10-2017/22:10:52	RDS connected
+2-10-2017/22:48:1	start server
+2-10-2017/22:48:18	query to database : select from users where id=test;
+2-10-2017/22:48:18	RDS connected
+2-10-2017/22:48:18	database query error
+2-10-2017/22:49:25	start server
+2-10-2017/22:49:26	query to database : select from users where id=test;
+2-10-2017/22:49:26	RDS connected
+2-10-2017/22:49:27	database query error
+2-10-2017/22:49:27	Error: ER_EMPTY_QUERY: Query was empty
+2-10-2017/22:51:19	start server
+2-10-2017/22:51:26	query to database : select from users where id="test";
+2-10-2017/22:51:26	RDS connected
+2-10-2017/22:51:26	database query error
+2-10-2017/22:51:26	Error: ER_EMPTY_QUERY: Query was empty
+2-10-2017/22:54:53	start server
+2-10-2017/22:54:57	query to database : select from users where id="test";
+2-10-2017/22:54:57	RDS connected
+2-10-2017/22:55:29	start server
+2-10-2017/22:55:30	query to database : select from users where id="test";
+2-10-2017/22:55:30	RDS connected
+2-10-2017/22:56:53	start server
+2-10-2017/22:56:56	query to database : select from users where id="test";
+2-10-2017/22:56:56	RDS connected
+2-10-2017/22:56:56	database query error
+2-10-2017/22:56:56	Error: ER_EMPTY_QUERY: Query was empty
+2-10-2017/22:56:56	undefined
+2-10-2017/22:57:23	start server
+2-10-2017/22:57:27	query to database : select from users where id="test";
+2-10-2017/22:57:27	RDS connected
+2-10-2017/23:0:33	start server
+2-10-2017/23:0:35	query to database : select from users where id="test";
+2-10-2017/23:0:35	RDS connected
+2-10-2017/23:0:35	database query error
+2-10-2017/23:0:35	Error: ER_EMPTY_QUERY: Query was empty
+2-10-2017/23:2:43	start server
+2-10-2017/23:2:46	query to database : select from users where id="test";
+2-10-2017/23:2:46	RDS connected
+2-10-2017/23:2:46	database query error
+2-10-2017/23:2:46	Error: ER_EMPTY_QUERY: Query was empty
+2-10-2017/23:7:2	start server
+2-10-2017/23:7:5	query to database : select from users where id="test";
+2-10-2017/23:7:5	RDS connected
+2-10-2017/23:7:5	database query error
+2-10-2017/23:7:5	Error: ER_EMPTY_QUERY: Query was empty
+2-10-2017/23:15:5	start server
+2-10-2017/23:17:0	query to database : select from users where id="test";
+2-10-2017/23:17:0	RDS connected
+2-10-2017/23:17:0	database query error
+2-10-2017/23:17:21	start server
+2-10-2017/23:17:23	query to database : select from users where id="test";
+2-10-2017/23:17:23	RDS connected
+2-10-2017/23:17:23	database query error
+2-10-2017/23:18:32	start server
+2-10-2017/23:18:34	query to database : select from users where id="test";
+2-10-2017/23:18:35	RDS connected
+2-10-2017/23:18:35	database query error
+2-10-2017/23:18:35	Error: ER_EMPTY_QUERY: Query was empty
+2-10-2017/23:23:44	start server
+2-10-2017/23:23:45	query to database : select from users where id="test";
+2-10-2017/23:23:45	RDS connected
+2-10-2017/23:23:45	database query error
+2-10-2017/23:23:45	Error: ER_EMPTY_QUERY: Query was empty
+2-10-2017/23:23:45	sign up id action is success 	 id : test
+2-10-2017/23:45:53	start server
+2-10-2017/23:45:55	query to database : select from users where id="test";
+2-10-2017/23:45:55	RDS connected
+2-10-2017/23:46:26	start server
+2-10-2017/23:46:28	query to database : select from users where id="test";
+2-10-2017/23:46:28	RDS connected
+2-10-2017/23:46:28	Error: ER_EMPTY_QUERY: Query was empty
+2-10-2017/23:46:28	query to database : insert into users(id, password) values("test", "test";
+2-10-2017/23:46:28	database query error
+2-10-2017/23:46:28	database query error
+2-10-2017/23:46:28	Error: ER_EMPTY_QUERY: Query was empty
+2-10-2017/23:46:28	Success : sign up 	 id : test password : test
+2-10-2017/23:48:8	start server
+2-10-2017/23:48:10	query to database : select from users where id="test";
+2-10-2017/23:48:10	RDS connected
+2-10-2017/23:48:10	database query error
+2-10-2017/23:48:10	Error: ER_EMPTY_QUERY: Query was empty
+2-10-2017/23:48:10	query to database : insert into users(id, password) values("test", "test");
+2-10-2017/23:48:10	database query error
+2-10-2017/23:48:10	Error: ER_EMPTY_QUERY: Query was empty
+2-10-2017/23:48:10	Success : sign up 	 id : test password : test
+2-10-2017/23:49:37	start server
+2-10-2017/23:49:40	query to database : select from users where id="test";
+2-10-2017/23:49:40	RDS connected
+2-10-2017/23:49:40	database query error
+2-10-2017/23:49:40	Error: ER_EMPTY_QUERY: Query was empty
+2-10-2017/23:49:40	query to database : insert into users(id, password) values("test", "test");
+2-10-2017/23:49:40	database query error
+2-10-2017/23:49:40	Error: ER_EMPTY_QUERY: Query was empty
+2-10-2017/23:49:40	Success : sign up 	 id : test password : test
+2-10-2017/23:50:41	query to database : select from users where id="test";
+2-10-2017/23:50:41	RDS connected
+2-10-2017/23:50:41	database query error
+2-10-2017/23:50:41	Error: ER_EMPTY_QUERY: Query was empty
+2-10-2017/23:50:41	query to database : insert into users(id, password) values("test", "test");
+2-10-2017/23:50:41	database query error
+2-10-2017/23:50:41	Error: ER_EMPTY_QUERY: Query was empty
+2-10-2017/23:50:41	Success : sign up 	 id : test password : test
+2-10-2017/23:51:56	start server
+2-10-2017/23:51:59	query to database : select from users where id="test";
+2-10-2017/23:52:0	RDS connected
+2-10-2017/23:52:0	database query error
+2-10-2017/23:52:0	Error: ER_EMPTY_QUERY: Query was empty
+2-10-2017/23:52:0	query to database : insert into users(id, password) values("test", "test");
+2-10-2017/23:52:0	database query error
+2-10-2017/23:52:0	Error: ER_EMPTY_QUERY: Query was empty
+2-10-2017/23:52:0	Success : sign up 	 id : test password : test
+2-10-2017/23:53:31	start server
+2-10-2017/23:53:33	query to database : select * from users
+2-10-2017/23:53:34	RDS connected
+2-10-2017/23:53:34	database query error
+2-10-2017/23:53:34	Error: ER_EMPTY_QUERY: Query was empty
+2-10-2017/23:54:13	start server
+2-10-2017/23:54:14	query to database : show databases;
+2-10-2017/23:54:14	RDS connected
+2-10-2017/23:54:14	database query error
+2-10-2017/23:54:14	Error: ER_EMPTY_QUERY: Query was empty
+2-10-2017/23:55:7	start server
+2-10-2017/23:55:14	query to database : show databases;
+2-10-2017/23:55:14	RDS connected
+2-10-2017/23:55:14	database query error
+2-10-2017/23:55:14	Error: ER_EMPTY_QUERY: Query was empty
+2-10-2017/23:56:5	start server
+2-10-2017/23:56:9	query to database : show databases;
+2-10-2017/23:56:9	RDS connected
+2-10-2017/23:56:9	database query result : 
+2-10-2017/23:56:9	[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2-10-2017/23:56:37	query to database : show databases;
+2-10-2017/23:56:37	RDS connected
+2-10-2017/23:56:37	database query result : 
+2-10-2017/23:56:37	[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]
+2-10-2017/23:56:43	start server
+2-10-2017/23:56:46	query to database : select from users where id="test";
+2-10-2017/23:56:46	RDS connected
+2-10-2017/23:56:46	database query error
+2-10-2017/23:56:46	Error : sign up 	 id : test
+2-10-2017/23:56:46	Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from users where id="test"' at line 1
+2-10-2017/23:57:57	start server
+2-10-2017/23:57:58	query to database : select * from users where id="test";
+2-10-2017/23:57:58	RDS connected
+2-10-2017/23:57:58	database query error
+2-10-2017/23:57:58	Error: ER_NO_DB_ERROR: No database selected
+2-10-2017/23:57:58	Error : sign up 	 id : test
+2-10-2017/23:58:52	start server
+2-10-2017/23:58:55	query to database : select * from users where id="test";
+2-10-2017/23:58:55	RDS connected
+2-10-2017/23:58:55	database query result : 
+2-10-2017/23:58:55	[object Object]
+2-10-2017/23:58:55	Error : sign up 	 id : test
+2-10-2017/23:58:55		test is already registed
+3-10-2017/0:0:54	start server
+3-10-2017/0:0:59	query to database : select * from users where id="test";
+3-10-2017/0:0:59	RDS connected
+3-10-2017/0:0:59	database query result : 
+3-10-2017/0:0:59	[object Object]
+3-10-2017/0:0:59	Error : sign up 	 id : test
+3-10-2017/0:0:59		test is already registed
+3-10-2017/0:1:14	start server
+3-10-2017/0:1:15	query to database : select * from users where id="test";
+3-10-2017/0:1:15	RDS connected
+3-10-2017/0:1:15	database query result : 
+3-10-2017/0:1:15	[object Object]
+3-10-2017/0:1:15	Error : sign up 	 id : test
+3-10-2017/0:1:15		test is already registed
+3-10-2017/0:3:16	start server
+3-10-2017/0:3:18	query to database : select * from users where id="test";
+3-10-2017/0:3:18	RDS connected
+3-10-2017/0:3:18	database query result : 
+3-10-2017/0:3:18	Error : sign up 	 id : test
+3-10-2017/0:3:18		test is already registed
+3-10-2017/0:3:18	0,[object Object]
+3-10-2017/0:8:0	start server
+3-10-2017/0:8:2	query to database : select * from users where id="test";
+3-10-2017/0:8:2	RDS connected
+3-10-2017/0:8:2	database query result : 
+3-10-2017/0:8:2	0
+3-10-2017/0:8:2		test is already registed
+3-10-2017/0:8:2	Error : sign up 	 id : test
+3-10-2017/0:10:55	start server
+3-10-2017/0:10:58	query to database : select * from users where id="test";
+3-10-2017/0:10:58	RDS connected
+3-10-2017/0:11:39	start server
+3-10-2017/0:11:42	query to database : select * from users where id="test";
+3-10-2017/0:11:42	RDS connected
+3-10-2017/0:11:42	database query result : 
+3-10-2017/0:11:42	Error : sign up 	 id : test
+3-10-2017/0:11:42		test is already registed
+3-10-2017/0:12:12	start server
+3-10-2017/0:12:15	query to database : select * from users where id="test";
+3-10-2017/0:12:15	RDS connected
+3-10-2017/0:12:15	database query result : 
+3-10-2017/0:12:15	[{"id":"test","password":"test"}]
+3-10-2017/0:12:15	Error : sign up 	 id : test
+3-10-2017/0:12:15		test is already registed
+3-10-2017/0:13:25	query to database : select * from users where id="test";
+3-10-2017/0:13:25	RDS connected
+3-10-2017/0:13:25	database query result : 
+3-10-2017/0:13:25	[]
+3-10-2017/0:13:25	Error : sign up 	 id : test
+3-10-2017/0:13:25		test is already registed
+3-10-2017/0:14:53	query to database : select * from users where id="test";
+3-10-2017/0:14:53	RDS connected
+3-10-2017/0:14:53	database query result : 
+3-10-2017/0:14:53	[]
+3-10-2017/0:14:53	Error : sign up 	 id : test
+3-10-2017/0:14:53		test is already registed
+3-10-2017/0:15:21	start server
+3-10-2017/0:15:23	query to database : select * from users where id="test";
+3-10-2017/0:15:23	RDS connected
+3-10-2017/0:15:23	database query result : 
+3-10-2017/0:15:23	[]
+3-10-2017/0:15:23	Error : sign up 	 id : test
+3-10-2017/0:15:23		test is already registed
+3-10-2017/0:16:54	query to database : select * from users where id="test";
+3-10-2017/0:16:54	RDS connected
+3-10-2017/0:16:54	database query result : 
+3-10-2017/0:16:54	[]
+3-10-2017/0:16:54		test is already registed
+3-10-2017/0:16:54	Error : sign up id 	 id : test
+3-10-2017/0:18:2	start server
+3-10-2017/0:18:4	query to database : select * from users where id="test";
+3-10-2017/0:18:4	RDS connected
+3-10-2017/0:18:4	database query result : 
+3-10-2017/0:18:4	[]
+3-10-2017/0:18:4	Error : sign up id 	 id : test
+3-10-2017/0:18:4		test is already registed
+3-10-2017/0:20:24	query to database : select * from users where id="test";
+3-10-2017/0:20:29	start server
+3-10-2017/0:20:30	query to database : select * from users where id="test";
+3-10-2017/0:20:30	RDS connected
+3-10-2017/0:20:30	[]
+3-10-2017/0:20:30	Success : sign up id 	 id : test
+3-10-2017/0:20:30	database query result : 
+3-10-2017/0:27:5	start server
+3-10-2017/0:27:10	query to database : insert into users(id, password) values("test", "test");
+3-10-2017/0:27:11	RDS connected
+3-10-2017/0:27:11	database query result : 
+3-10-2017/0:27:11	{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"","protocol41":true,"changedRows":0}
+3-10-2017/0:28:11	start server
+3-10-2017/0:28:12	query to database : insert into users(id, password) values("test", "test");
+3-10-2017/0:28:13	RDS connected
+3-10-2017/0:28:13	database query error
+3-10-2017/0:28:13	Error: ER_DUP_ENTRY: Duplicate entry 'test' for key 'PRIMARY'
+3-10-2017/0:29:36	start server
+3-10-2017/0:29:38	query to database : insert into users(id, password) values("test", "test");
+3-10-2017/0:29:38	RDS connected
+3-10-2017/0:29:38	database query error
+3-10-2017/0:29:38	{"code":"ER_DUP_ENTRY","errno":1062,"sqlMessage":"Duplicate entry 'test' for key 'PRIMARY'","sqlState":"23000","index":0,"sql":"insert into users(id, password) values(\"test\", \"test\");"}
+3-10-2017/0:32:33	start server
+3-10-2017/0:32:35	query to database : insert into users(id, password) values("test", "test");
+3-10-2017/0:32:35	RDS connected
+3-10-2017/0:32:35	database query result : 
+3-10-2017/0:32:35	{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"","protocol41":true,"changedRows":0}
+3-10-2017/0:32:35	Success : sign up 	 id : test password : test
+3-10-2017/0:33:20	query to database : insert into users(id, password) values("test", "test");
+3-10-2017/0:33:20	RDS connected
+3-10-2017/0:33:20	database query error
+3-10-2017/0:33:20	Error : sign up 	 id : test
+3-10-2017/0:33:20	{"code":"ER_DUP_ENTRY","errno":1062,"sqlMessage":"Duplicate entry 'test' for key 'PRIMARY'","sqlState":"23000","index":0,"sql":"insert into users(id, password) values(\"test\", \"test\");"}
+3-10-2017/0:33:20		 database error
+3-10-2017/0:34:36	start server
+3-10-2017/0:34:37	query to database : insert into users(id, password) values("test", "test");
+3-10-2017/0:34:37	RDS connected
+3-10-2017/0:34:37	database query error
+3-10-2017/0:34:37		test is already registed
+3-10-2017/0:34:37	{"code":"ER_DUP_ENTRY","errno":1062,"sqlMessage":"Duplicate entry 'test' for key 'PRIMARY'","sqlState":"23000","index":0,"sql":"insert into users(id, password) values(\"test\", \"test\");"}
+3-10-2017/0:34:37	Error : sign up 	 id : test
+3-10-2017/0:45:42	start server
+3-10-2017/0:45:44	query to database : insert into users(id, password) values("test", "test");
+3-10-2017/0:45:45	RDS connected
+3-10-2017/0:45:45	database query error
+3-10-2017/0:45:45	Error : sign up 	 id : test
+3-10-2017/0:45:45		id is already registed
+3-10-2017/0:45:45	{"code":"ER_DUP_ENTRY","errno":1062,"sqlMessage":"Duplicate entry 'test' for key 'PRIMARY'","sqlState":"23000","index":0,"sql":"insert into users(id, password) values(\"test\", \"test\");"}
+3-10-2017/0:46:17	query to database : select * from users where id="test";
+3-10-2017/0:46:17	RDS connected
+3-10-2017/0:46:17	database query result : 
+3-10-2017/0:46:17	[{"id":"test","password":"test"}]
+3-10-2017/0:46:17	Error : sign up id 	 id : test
+3-10-2017/0:46:17		id is already registed
+3-10-2017/0:58:52	start server
+3-10-2017/1:0:25	start server
+3-10-2017/1:0:28	query to database : select * from users where id="test";
+3-10-2017/1:0:28	RDS connected
+3-10-2017/1:0:28	database query result : 
+3-10-2017/1:0:28	[{"id":"test","password":"test"}]
+3-10-2017/1:0:28	Error : sign up id 	 id : test
+3-10-2017/1:0:28		id is already registed
+3-10-2017/1:2:53	start server
+3-10-2017/1:2:56	query to database : select * from users where id="test";
+3-10-2017/1:2:56	RDS connected
+3-10-2017/1:2:56	database query result : 
+3-10-2017/1:2:56	[{"id":"test","password":"test"}]
+3-10-2017/1:2:56	Error : sign up id 	 id : test
+3-10-2017/1:2:56		id is already registed
+3-10-2017/1:3:2	query to database : insert into users(id, password) values("test", "test");
+3-10-2017/1:3:2	RDS connected
+3-10-2017/1:3:2	database query error
+3-10-2017/1:3:2	{"code":"ER_DUP_ENTRY","errno":1062,"sqlMessage":"Duplicate entry 'test' for key 'PRIMARY'","sqlState":"23000","index":0,"sql":"insert into users(id, password) values(\"test\", \"test\");"}
+3-10-2017/1:3:2	Error : sign up 	 id : test
+3-10-2017/1:3:2		id is already registed
+3-10-2017/1:12:46	start server
+3-10-2017/1:12:48	query to database : select * from users where id="test";
+3-10-2017/1:12:48	RDS connected
+3-10-2017/1:12:48	database query result : 
+3-10-2017/1:12:48	[{"id":"test","password":"test"}]
+3-10-2017/1:12:48	Success : sign in id 	 id : test
+3-10-2017/1:24:24	start server
+3-10-2017/1:24:26	query to database : select * from users where id="test";
+3-10-2017/1:24:26	RDS connected
+3-10-2017/1:24:26	database query result : 
+3-10-2017/1:24:26	[{"id":"test","password":"test"}]
+3-10-2017/1:24:26	Success : sign in id 	 id : test
+3-10-2017/1:24:52	start server
+3-10-2017/1:24:54	query to database : select * from users where id="test"and password="test";
+3-10-2017/1:24:55	RDS connected
+3-10-2017/1:24:55	database query result : 
+3-10-2017/1:24:55	[{"id":"test","password":"test"}]
+3-10-2017/1:24:55	Success : sign in 	 id : test, password : test

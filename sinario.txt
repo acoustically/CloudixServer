@@ -1,0 +1,73 @@
+1 smart phone
+  -- developed with android
+  I. sign up to server
+    1) open sign up page
+    2) get ID and password from user
+    3) send data(ID, password) to server
+    4) receive message from server
+    5) if success message is returned
+      i. redirect to main page
+    6) if error message is returned
+      i. show up error message
+  II. sign in
+    1) open sign in page
+    2) get ID and password from user
+      i. checked at remember box
+      ii. write file to device that have user account
+      iii. check file when again meet II.
+      iv. read ID and password from file
+    3) send data(ID, password) to server
+    4) receive message from server
+    5) if success message is returned
+      i. redirect to main page
+    6) if error message is returned
+      i. show up error message
+  III. regist serial number and password
+    1) recode raspberry pi's serial number and serial password from user
+    2) put new password
+    3) send data(serial number, new password, original password) and account data to server
+    4) receive message from server
+    5) if success message is returned
+      i. show up success message 
+      ii. redirect to main page
+    6) if error message is returned
+      i. show up error message
+  //TODO control switchs
+
+2 server
+  -- developed with aws ec2 (node/express)
+  I. regist account
+    1) receive account data from androd client
+    2) query to mysql database
+    3) if account ID is not exist
+      i. send success message to android client
+      ii. recode account to database
+    4) if account is exist
+      i. send error meesage to android client
+
+  II. authenticate account
+    1) receive account data from androd client
+    2) query to mysql database
+    3) if account is exist
+      i. send success message to android client
+    4) if account is exist
+      i. send error meesage to android client
+
+  III. regist raspberry pi
+    1) get data from smart phone ㅡ at 1-III-3) ㅡ
+    2) query rasberry pi serial number and orginal password to mysql database
+    3) if exist
+      i. send success message to android client
+      ii. recode account data and raspberry pi data to database
+    4) if not exist
+      i. send error message
+
+  //TODO control switchs
+
+3 switch
+  -- developed with raspberry pi
+  I. maintain serial number and password
+    1) read config file
+    2) load serial number and password
+
+  // TODO control switch
