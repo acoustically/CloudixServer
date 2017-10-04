@@ -4,7 +4,7 @@ let bodyParser = require('body-parser');
 
 let logger = (require('./src/logger')).logger;
 
-let port = 3100;
+let port = 3000;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true}));

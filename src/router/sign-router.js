@@ -7,12 +7,15 @@ let idNotExistError = "id is not exist";
 
 module.exports = function signRouter(app) {
   app.post('/sign-up-id.json', (req, res) => {
+    logger.log("action : sign-up-id.json");
+    logger.log("body : " + JSON.stringify(req.body).toString());
+
     let userId = req.body.id;
     let error = "Error : sign up id \t id : " + userId;
     let success = "Success : sign up id \t id : " + userId;
    
     let rdsConnector = new RDSConnector();
-    sql = "select * from users where id=" + "\"" + userId + "\"" + ";";
+    sql = "select id from users where id=" + "\"" + userId + "\"" + ";";
     rdsConnector.query(sql, (err, result) => {
       if(err) {
         logger.log(error);
@@ -32,6 +35,9 @@ module.exports = function signRouter(app) {
   });
 
   app.post('/sign-up.json', (req, res) => {
+    logger.log("action : sign-up.json");
+    logger.log("body : " + JSON.stringify(req.body).toString());
+
     let userId = req.body.id;
     let password = req.body.password;
     let error = "Error : sign up \t id : " + userId + " password : "  + password;
@@ -58,12 +64,15 @@ module.exports = function signRouter(app) {
   });
 
   app.post('/sign-in-id.json', (req, res) => {
+    logger.log("action : sign-in-id.json");
+    logger.log("body : " + JSON.stringify(req.body).toString());
+
     let userId = req.body.id;
     let error = "Error : sign in id \t id : " + userId;
     let success = "Success : sign in id \t id : " + userId;
 
     let rdsConnector = new RDSConnector();
-    sql = "select * from users where id=" + "\"" + userId + "\"" + ";";
+    sql = "select id from users where id=" + "\"" + userId + "\"" + ";";
     rdsConnector.query(sql, (err, result) => {
       if(err) {
         logger.log(error);
@@ -83,6 +92,8 @@ module.exports = function signRouter(app) {
   });
 
   app.post('/sign-in.json', (req, res) => {
+    logger.log("action : sign-in.json");
+    logger.log("body : " + JSON.stringify(req.body).toString());
     let userId = req.body.id;
     let password = req.body.password;
     let error = "Error : sign in \t id : " + userId + ", password : " + password;

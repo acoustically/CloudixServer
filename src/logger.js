@@ -5,7 +5,7 @@ class Logger {
   log(string) {
     let log = this._get_current_time() + "\t" + string + "\n";
     console.log(log);
-    this.fs.appendFile("./log/server_log.txt", log, 'utf8', (err)=> {
+    this.fs.appendFile("./log/server.log", log, 'utf8', (err)=> {
       if(err) {
         console.log("file log failed");
       }
