@@ -1,6 +1,6 @@
 let Responsor = require('../responsor');
 let logger = (require('../logger')).logger;
-let RDSConnector = require('../RDSConnector');
+let RDSConnector = require('../rds-connector');
 let tokenAuthentication = require('./token-authentication');
 let dbError = "database error";
 let idAlreadyRegistedError = "id is already registed";

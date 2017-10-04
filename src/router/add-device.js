@@ -1,6 +1,7 @@
 let logger = require("../logger").logger;
 let Responsor = require("../responsor");
-let RDSConnector = require("../RDSConnector");
+let RDSConnector = require("../rds-connector");
+let tokenAuthentication = require("./token-authentication");
 let dbError = "database error"
 
 
