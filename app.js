@@ -12,6 +12,9 @@ app.set('json spaces', 40);
 
 let signRouter = require("./src/router/sign-router");
 signRouter(app);
+let addDeviceRouter = require("./src/router/add-device");
+addDeviceRouter(app);
+
 
 app.listen(port, ()=> {
   logger.log('start server');

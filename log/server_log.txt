@@ -344,3 +344,153 @@ Connected to 3000
 3-10-2017/1:24:55	database query result : 
 3-10-2017/1:24:55	[{"id":"test","password":"test"}]
 3-10-2017/1:24:55	Success : sign in 	 id : test, password : test
+4-10-2017/18:40:13	start server
+4-10-2017/18:41:11	RDS connected
+4-10-2017/18:42:0	start server
+4-10-2017/18:42:2	select * from switchs where serial="test" and password="test";
+4-10-2017/18:42:2	RDS connected
+4-10-2017/18:51:36	start server
+4-10-2017/18:51:39	select * from switchs where serial="test" and password="test";
+4-10-2017/18:51:39	RDS connected
+4-10-2017/18:51:55	start server
+4-10-2017/18:51:56	select * from switchs where serial="test" and password="test";
+4-10-2017/18:51:56	query to database : select * from switchs where serial="test" and password="test";
+4-10-2017/18:51:56	RDS connected
+4-10-2017/18:51:56	database query result : 
+4-10-2017/18:51:56	[]
+4-10-2017/18:51:56	Error: check device    user_id : undefined serial : test device password : test
+4-10-2017/18:51:56		 device not exist
+4-10-2017/18:53:23	query to database : select * from switchs where serial="000000001" and password="test";
+4-10-2017/18:53:23	select * from switchs where serial="000000001" and password="test";
+4-10-2017/18:53:23	RDS connected
+4-10-2017/18:53:23	database query result : 
+4-10-2017/18:53:23	[]
+4-10-2017/18:53:23	Error: check device    user_id : undefined serial : 000000001 device password : test
+4-10-2017/18:53:23		 device not exist
+4-10-2017/18:53:30	select * from switchs where serial="0000000001" and password="test";
+4-10-2017/18:53:30	query to database : select * from switchs where serial="0000000001" and password="test";
+4-10-2017/18:53:30	RDS connected
+4-10-2017/18:53:31	database query result : 
+4-10-2017/18:53:31	[]
+4-10-2017/18:53:31		 device not exist
+4-10-2017/18:53:31	Error: check device    user_id : undefined serial : 0000000001 device password : test
+4-10-2017/18:54:20	select * from switchs where serial="0000000001" and password="test";
+4-10-2017/18:54:20	query to database : select * from switchs where serial="0000000001" and password="test";
+4-10-2017/18:54:20	RDS connected
+4-10-2017/18:54:20	database query result : 
+4-10-2017/18:54:20	[]
+4-10-2017/18:54:20	Error: check device    user_id : undefined serial : 0000000001 device password : test
+4-10-2017/18:54:20		 device not exist
+4-10-2017/18:54:25	start server
+4-10-2017/18:54:26	select * from switchs where serial="0000000001" and original_password="test";
+4-10-2017/18:54:26	query to database : select * from switchs where serial="0000000001" and original_password="test";
+4-10-2017/18:54:27	RDS connected
+4-10-2017/18:54:27	database query result : 
+4-10-2017/18:54:27	[{"serial":"0000000001","password":null,"original_password":"test"}]
+4-10-2017/18:54:27	Success: check device    user_id : undefined serial : 0000000001 device password : test
+4-10-2017/18:56:40	start server
+4-10-2017/18:56:41	select * from switchs where serial="0000000001"
+4-10-2017/18:56:41	query to database : select * from switchs where serial="0000000001"
+4-10-2017/18:56:41	RDS connected
+4-10-2017/18:56:41	database query result : 
+4-10-2017/18:56:41	test
+4-10-2017/18:56:41	[{"serial":"0000000001","password":null,"original_password":"test"}]
+4-10-2017/18:57:27	start server
+4-10-2017/18:57:30	select * from switchs where serial="0000000001"
+4-10-2017/18:57:30	query to database : select * from switchs where serial="0000000001"
+4-10-2017/18:57:30	RDS connected
+4-10-2017/18:57:30	database query result : 
+4-10-2017/18:57:30	[{"serial":"0000000001","password":null,"original_password":"test"}]
+4-10-2017/18:57:30	null
+4-10-2017/18:57:38	start server
+4-10-2017/18:57:41	select * from switchs where serial="0000000001"
+4-10-2017/18:57:41	query to database : select * from switchs where serial="0000000001"
+4-10-2017/18:57:41	RDS connected
+4-10-2017/18:57:41	database query result : 
+4-10-2017/18:57:41	[{"serial":"0000000001","password":null,"original_password":"test"}]
+4-10-2017/18:57:41	undefined
+4-10-2017/18:58:2	start server
+4-10-2017/18:58:3	select * from switchs where serial="0000000001"
+4-10-2017/18:58:3	query to database : select * from switchs where serial="0000000001"
+4-10-2017/18:58:3	RDS connected
+4-10-2017/18:58:3	database query result : 
+4-10-2017/18:58:3	[{"serial":"0000000001","password":null,"original_password":"test"}]
+4-10-2017/18:58:3	true
+4-10-2017/19:6:29	start server
+4-10-2017/19:6:35	select * from switchs where serial="0000000001"
+4-10-2017/19:6:35	query to database : select * from switchs where serial="0000000001"
+4-10-2017/19:6:35	RDS connected
+4-10-2017/19:6:35	database query result : 
+4-10-2017/19:6:35	Success: check device    user_id : undefined serial : 0000000001 device password : test
+4-10-2017/19:6:35	[{"serial":"0000000001","password":null,"original_password":"test"}]
+4-10-2017/19:6:35	null
+4-10-2017/19:7:37	start server
+4-10-2017/19:7:39	select * from switchs where serial="0000000001"
+4-10-2017/19:7:39	query to database : select * from switchs where serial="0000000001"
+4-10-2017/19:7:39	RDS connected
+4-10-2017/19:7:40	database query result : 
+4-10-2017/19:7:40	[{"serial":"0000000001","password":null,"original_password":"test"}]
+4-10-2017/19:7:40	Success: check device    user_id : undefined serial : 0000000001 device password : test
+4-10-2017/19:7:40	null
+4-10-2017/19:14:9	select * from switchs where serial="0000000001"
+4-10-2017/19:14:9	query to database : select * from switchs where serial="0000000001"
+4-10-2017/19:14:9	RDS connected
+4-10-2017/19:14:9	database query result : 
+4-10-2017/19:14:9	[{"serial":"0000000001","password":null,"original_password":"test"}]
+4-10-2017/19:14:9	Error: check device    user_id : undefined serial : 0000000001 device password : tes
+4-10-2017/19:14:9		 wrong password
+4-10-2017/19:14:9	null
+4-10-2017/19:16:20	start server
+4-10-2017/19:16:25	select * from switchs where serial="0000000001"
+4-10-2017/19:16:25	query to database : select * from switchs where serial="0000000001"
+4-10-2017/19:16:25	RDS connected
+4-10-2017/19:16:25	database query result : 
+4-10-2017/19:16:25	[{"serial":"0000000001","password":"test1","original_password":"test"}]
+4-10-2017/19:16:25		 original password is dirtied
+4-10-2017/19:16:25	Error: check device    user_id : undefined serial : 0000000001 device password : test
+4-10-2017/19:16:49	select * from switchs where serial="0000000001"
+4-10-2017/19:16:49	query to database : select * from switchs where serial="0000000001"
+4-10-2017/19:16:49	RDS connected
+4-10-2017/19:16:49	database query result : 
+4-10-2017/19:16:49	[{"serial":"0000000001","password":"test1","original_password":"test"}]
+4-10-2017/19:16:49	Error: check device    user_id : undefined serial : 0000000001 device password : test3
+4-10-2017/19:16:49		 wrong password
+4-10-2017/19:17:5	select * from switchs where serial="00000000011"
+4-10-2017/19:17:5	query to database : select * from switchs where serial="00000000011"
+4-10-2017/19:17:5	RDS connected
+4-10-2017/19:17:5	[]
+4-10-2017/19:17:5		 device not exist
+4-10-2017/19:17:5	Error: check device    user_id : undefined serial : 00000000011 device password : test3
+4-10-2017/19:17:5	database query result : 
+4-10-2017/19:22:36	select * from switchs where serial="0000000001"
+4-10-2017/19:22:36	query to database : select * from switchs where serial="0000000001"
+4-10-2017/19:22:36	RDS connected
+4-10-2017/19:22:36	database query result : 
+4-10-2017/19:22:36	[{"serial":"0000000001","password":"test1","original_password":"test"}]
+4-10-2017/19:22:36		 wrong password
+4-10-2017/19:22:36	Error: check device    user_id : undefined serial : 0000000001 device password : test3
+4-10-2017/19:22:43	start server
+4-10-2017/19:22:47	select * from switchs where serial="0000000001"
+4-10-2017/19:22:47	query to database : select * from switchs where serial="0000000001"
+4-10-2017/19:22:47	RDS connected
+4-10-2017/19:22:47	database query result : 
+4-10-2017/19:22:47	[{"serial":"0000000001","password":"test1","original_password":"test"}]
+4-10-2017/19:22:47	Success: check device    user_id : undefined serial : 0000000001 device password : test1
+4-10-2017/19:22:51	select * from switchs where serial="0000000001"
+4-10-2017/19:22:51	query to database : select * from switchs where serial="0000000001"
+4-10-2017/19:22:51	RDS connected
+4-10-2017/19:22:51	database query result : 
+4-10-2017/19:22:51	Error: check device    user_id : undefined serial : 0000000001 device password : test
+4-10-2017/19:22:51	[{"serial":"0000000001","password":"test1","original_password":"test"}]
+4-10-2017/19:22:51		 original password is dirty
+4-10-2017/19:23:28	select * from switchs where serial="0000000001"
+4-10-2017/19:23:28	query to database : select * from switchs where serial="0000000001"
+4-10-2017/19:23:28	RDS connected
+4-10-2017/19:23:28	database query result : 
+4-10-2017/19:23:28	[{"serial":"0000000001","password":null,"original_password":"test"}]
+4-10-2017/19:23:28	Success: check device    user_id : undefined serial : 0000000001 device password : test
+4-10-2017/19:25:42	query to database : select * from users where id="test";
+4-10-2017/19:25:42	RDS connected
+4-10-2017/19:25:42	database query result : 
+4-10-2017/19:25:42	[{"id":"test","password":"test"}]
+4-10-2017/19:25:42	Success : sign in id 	 id : test
