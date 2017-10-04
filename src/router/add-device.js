@@ -1,11 +1,18 @@
 let logger = require("../logger").logger;
-let Responsor = require("../Responsor");
+let Responsor = require("../responsor");
 let RDSConnector = require("../RDSConnector");
 let dbError = "database error"
 
 
-module.exports = function addDeviceRouter(app) {
+module.exports = (app) => {
   app.post("/check-device.json", (req, res) => {
+    try {
+      tokenAuthentication('/sign-up-id.json', req, res);
+    } catch (err) {
+      Responsor.sendError(res, err.message);
+      return;
+    }
+
     let user_id = req.body.user_id;
     let serial = req.body.serial;
     let password = req.body.password;

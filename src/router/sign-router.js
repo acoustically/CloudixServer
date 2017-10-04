@@ -1,14 +1,19 @@
-let Responsor = require('../Responsor');
+let Responsor = require('../responsor');
 let logger = (require('../logger')).logger;
 let RDSConnector = require('../RDSConnector');
+let tokenAuthentication = require('./token-authentication');
 let dbError = "database error";
 let idAlreadyRegistedError = "id is already registed";
 let idNotExistError = "id is not exist";
 
-module.exports = function signRouter(app) {
+module.exports = (app) => {
   app.post('/sign-up-id.json', (req, res) => {
-    logger.log("action : sign-up-id.json");
-    logger.log("body : " + JSON.stringify(req.body).toString());
+    try {
+      tokenAuthentication('/sign-up-id.json', req, res);
+    } catch (err) {
+      Responsor.sendError(res, err.message);
+      return;
+    }
 
     let userId = req.body.id;
     let error = "Error : sign up id \t id : " + userId;
@@ -35,8 +40,12 @@ module.exports = function signRouter(app) {
   });
 
   app.post('/sign-up.json', (req, res) => {
-    logger.log("action : sign-up.json");
-    logger.log("body : " + JSON.stringify(req.body).toString());
+    try {
+      tokenAuthentication('/sign-up.json', req, res);
+    } catch (err) {
+      Responsor.sendError(res, err.message);
+      return;
+    }
 
     let userId = req.body.id;
     let password = req.body.password;
@@ -64,8 +73,12 @@ module.exports = function signRouter(app) {
   });
 
   app.post('/sign-in-id.json', (req, res) => {
-    logger.log("action : sign-in-id.json");
-    logger.log("body : " + JSON.stringify(req.body).toString());
+    try {
+      tokenAuthentication('/sign-in-id.json', req, res);
+    } catch (err) {
+      Responsor.sendError(res, err.message);
+      return;
+    }
 
     let userId = req.body.id;
     let error = "Error : sign in id \t id : " + userId;
@@ -92,8 +105,13 @@ module.exports = function signRouter(app) {
   });
 
   app.post('/sign-in.json', (req, res) => {
-    logger.log("action : sign-in.json");
-    logger.log("body : " + JSON.stringify(req.body).toString());
+    try {
+      tokenAuthentication('/sign-in.json', req, res);
+    } catch (err) {
+      Responsor.sendError(res, err.message);
+      return;
+    }
+
     let userId = req.body.id;
     let password = req.body.password;
     let error = "Error : sign in \t id : " + userId + ", password : " + password;
