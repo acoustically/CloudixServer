@@ -14,11 +14,12 @@ module.exports = (app) => {
       return;
     }
 
-    let user_id = req.body.user_id;
+    let userId = req.body.user_id;
     let serial = req.body.serial;
     let password = req.body.password;
-    let error = `Error: check device  /  user_id : ${user_id}, serial : ${serial}, device password : ${password}`;
-    let success = `Success: check device  /  user_id : ${user_id}, serial : ${serial}, device password : ${password}`;
+    let body = JSON.stringify(req.body).toString();
+    let error = `Error: check device / ${body};
+    let success = `Success: check device / ${body};
     
     let rdsConnector = new RDSConnector();
     sql = `select * from switchs where serial="${serial}"`;
@@ -63,5 +64,4 @@ module.exports = (app) => {
       }
     });
   });
-
 }

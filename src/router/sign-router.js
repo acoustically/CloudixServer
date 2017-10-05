@@ -16,11 +16,12 @@ module.exports = (app) => {
     }
 
     let userId = req.body.id;
-    let error = "Error : sign up id \t id : " + userId;
-    let success = "Success : sign up id \t id : " + userId;
+    let body = JSON.string(req.body).toString();
+    let error = `Error : sign up id / ${body}`;
+    let success = `Success : sign up id / ${body}`;
    
     let rdsConnector = new RDSConnector();
-    sql = "select id from users where id=" + "\"" + userId + "\"" + ";";
+    sql = `select id from users where id="${userId}";`;
     rdsConnector.query(sql, (err, result) => {
       if(err) {
         logger.log(error);
@@ -49,12 +50,13 @@ module.exports = (app) => {
 
     let userId = req.body.id;
     let password = req.body.password;
-    let error = "Error : sign up \t id : " + userId + " password : "  + password;
-    let success = "Success : sign up \t id : " + userId + " password : "  + password;
 
+    let body = JSON.string(req.body).toString();
+    let error = `Error : sign up id / ${body}`;
+    let success = `Success : sign up id / ${body}`;
+ 
     let rdsConnector = new RDSConnector();
-    //sql = "select * from users where id=" + "\"" + userId + "\"" + ";";
-    sql = "insert into users(id, password) values(" + "\"" + userId + "\", \"" + password + "\");";
+    sql = `insert into users(id, password) values("${userId}", "${password}")`;
     rdsConnector.query(sql, (err, result) => {
       if(err) {
         logger.log(error);
@@ -81,11 +83,13 @@ module.exports = (app) => {
     }
 
     let userId = req.body.id;
-    let error = "Error : sign in id \t id : " + userId;
-    let success = "Success : sign in id \t id : " + userId;
+
+    let body = JSON.string(req.body).toString();
+    let error = `Error : sign up id / ${body}`;
+    let success = `Success : sign up id / ${body}`;
 
     let rdsConnector = new RDSConnector();
-    sql = "select id from users where id=" + "\"" + userId + "\"" + ";";
+    sql = `select id from users where id="${userId}"`;
     rdsConnector.query(sql, (err, result) => {
       if(err) {
         logger.log(error);
@@ -114,11 +118,13 @@ module.exports = (app) => {
 
     let userId = req.body.id;
     let password = req.body.password;
-    let error = "Error : sign in \t id : " + userId + ", password : " + password;
-    let success = "Success : sign in \t id : " + userId + ", password : " + password;
+
+    let body = JSON.string(req.body).toString();
+    let error = `Error : sign up id / ${body}`;
+    let success = `Success : sign up id / ${body}`;
 
     let rdsConnector = new RDSConnector();
-    sql = "select * from users where id=" + "\"" + userId + "\"" + "and password=\"" + password + "\";";
+    sql = `select * from users where id="${userId}" and password="${password}";`;
     rdsConnector.query(sql, (err, result) => {
       if(err) {
         logger.log(error);
