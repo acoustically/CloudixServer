@@ -18,8 +18,8 @@ module.exports = (app) => {
     let serial = req.body.serial;
     let password = req.body.password;
     let body = JSON.stringify(req.body).toString();
-    let error = `Error: check device / ${body};
-    let success = `Success: check device / ${body};
+    let error = `Error: check device / ${body}`;
+    let success = `Success: check device / ${body}`;
     
     let rdsConnector = new RDSConnector();
     sql = `select * from switchs where serial="${serial}"`;

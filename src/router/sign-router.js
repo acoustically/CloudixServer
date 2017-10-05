@@ -16,7 +16,7 @@ module.exports = (app) => {
     }
 
     let userId = req.body.id;
-    let body = JSON.string(req.body).toString();
+    let body = JSON.stringify(req.body).toString();
     let error = `Error : sign up id / ${body}`;
     let success = `Success : sign up id / ${body}`;
    
@@ -51,7 +51,7 @@ module.exports = (app) => {
     let userId = req.body.id;
     let password = req.body.password;
 
-    let body = JSON.string(req.body).toString();
+    let body = JSON.stringify(req.body).toString();
     let error = `Error : sign up id / ${body}`;
     let success = `Success : sign up id / ${body}`;
  
@@ -84,7 +84,7 @@ module.exports = (app) => {
 
     let userId = req.body.id;
 
-    let body = JSON.string(req.body).toString();
+    let body = JSON.stringify(req.body).toString();
     let error = `Error : sign up id / ${body}`;
     let success = `Success : sign up id / ${body}`;
 
@@ -119,7 +119,7 @@ module.exports = (app) => {
     let userId = req.body.id;
     let password = req.body.password;
 
-    let body = JSON.string(req.body).toString();
+    let body = JSON.stringify(req.body).toString();
     let error = `Error : sign up id / ${body}`;
     let success = `Success : sign up id / ${body}`;
 
@@ -133,8 +133,8 @@ module.exports = (app) => {
       } else {
         if(result.length == 0) {
           logger.log(error);
-          logger.log("\t" + idNotExistError);
-          Responsor.sendError(res, idNotExistError);
+          logger.log("\t" + "password is incorrect");
+          Responsor.sendError(res, "password is incorrect");
         } else {
           logger.log(success);
           Responsor.sendSuccess(res);
