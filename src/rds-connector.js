@@ -14,6 +14,7 @@ module.exports = class RDSConnector {
     this.connector.connect((err) => {
       if (err) {
         this.logger.log("Error : RDS connect error");
+        callback(err, null);
       } else {
         this.logger.log("Success : RDS connected");
         this.logger.log("Query : " + sql);

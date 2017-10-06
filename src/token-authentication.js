@@ -1,4 +1,4 @@
-let logger = require("../logger").logger;
+let logger = require("./logger").logger;
 
 module.exports = (action, req, res) => {
   let token = req.body.token;
