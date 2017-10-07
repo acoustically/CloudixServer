@@ -20,11 +20,8 @@ app.use((req, res, next) => {
   }
 });
 
-let signRouter = require("./src/router/sign-router");
-signRouter(app);
-let addDeviceRouter = require("./src/router/add-device");
-addDeviceRouter(app);
-
+app.use("/sign", require("./src/routes/sign.js"));
+app.use("/add-device", require("./src/routes/add-device.js"));
 
 app.listen(port, ()=> {
   logger.log('start server');
