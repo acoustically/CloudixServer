@@ -9,7 +9,7 @@ let idNotExistError = "id is not exist";
 let express = require("express");
 let router = express.Router();
 
-router.post('/up-id.json', (req, res) => {
+router.post('/sign-up-id.json', (req, res) => {
   let userId = req.body.id;
  
   let rdsConnector = new RDSConnector();
@@ -27,7 +27,7 @@ router.post('/up-id.json', (req, res) => {
   });
 });
 
-router.post('/up.json', (req, res) => {
+router.post('/sign-up.json', (req, res) => {
   let userId = req.body.id;
   let password = req.body.password;
 
@@ -47,7 +47,7 @@ router.post('/up.json', (req, res) => {
   });
 });
 
-router.post('/in-id.json', (req, res) => {
+router.post('/sign-in-id.json', (req, res) => {
   let userId = req.body.id;
 
   let rdsConnector = new RDSConnector();
@@ -65,7 +65,7 @@ router.post('/in-id.json', (req, res) => {
   });
 });
 
-router.post('/in.json', (req, res) => {
+router.post('/sign-in.json', (req, res) => {
   let userId = req.body.id;
   let password = req.body.password;
 

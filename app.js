@@ -20,7 +20,7 @@ app.use((req, res, next) => {
   }
 });
 
-app.use("/sign", require("./src/routes/sign.js"));
+app.use("/", require("./src/routes/sign.js"));
 app.use("/add-device", require("./src/routes/add-device.js"));
 
 app.listen(port, ()=> {

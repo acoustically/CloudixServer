@@ -8,7 +8,7 @@ let express = require("express");
 let router = express.Router();
 
 
-router.post("/check-device.json", (req, res) => {
+router.post("/check.json", (req, res) => {
   let userId = req.body.user_id;
   let serial = req.body.serial;
   let password = req.body.password;
