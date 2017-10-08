@@ -13,7 +13,6 @@ router.post("/check.json", (req, res) => {
   let serial = req.body.serial;
   let password = req.body.password;
   let body = JSON.stringify(req.body).toString();
-  let success = `Success: check device / ${body}`;
   
   let rdsConnector = new RDSConnector();
   sql = `select * from switchs where serial="${serial}"`;
@@ -45,6 +44,20 @@ router.post("/check.json", (req, res) => {
           }
         }
       }
+    }
+  });
+});
+
+router.post("/new-password.json", (req, res) => {
+  let serial = req.body.serial;
+  let password = req.body.password;
+  let rdsConnector = new RDSConnector();
+  sql = `update switchs set password="${password}" where serial="${serial}"`;
+  rdsConnector.query(sql, (err, result) => {
+    if(err) {
+      Responsor.sendError(req, res, dbError);
+    } else {
+      Responsor.sendSuccess(req, res);
     }
   });
 });
