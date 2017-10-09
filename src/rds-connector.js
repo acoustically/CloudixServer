@@ -33,7 +33,32 @@ module.exports = class RDSConnector {
         });
       }
     });
+  }
 
+  asyncQuery(sql) {
+    return new Promise((resolve, reject) => {
+      this.connector.connect((err) => {
+        if (err) {
+          this.logger.log("Error : RDS connect error");
+        } else {
+          this.logger.log("Success : RDS connected");
+          this.logger.log("Query : " + sql);
+          this.connector.query(sql, (err, res) => {
+            if (err) {
+              this.logger.log("Error : database query error");
+              let json = JSON.stringify(err);
+              this.logger.log(json);
+              reject(err);
+            } else {
+              this.logger.log("Success : database query result : ");
+              let json = JSON.stringify(res);
+              this.logger.log(json);
+              resolve(res);
+            }
+          });
+        }
+      });   
+    });
   }
 }
 
