@@ -62,7 +62,7 @@ router.post("/new-password.json", (req, res) => {
   });
 });
 
-router.post("/add-switch.json", async (req, res) => {
+router.post("/new-users-switchs.json", async (req, res) => {
   let serial = req.body.serial;
   let userId = req.body.user_id;
   let buttons = req.body.buttons;
@@ -113,10 +113,42 @@ router.post("/add-switch.json", async (req, res) => {
       Responsor.sendSuccess(req, res);
     } else {
       Responsor.sendError(req, res, "database error");
-        logger.log("4");
       return;
     }    
   }
 });
 
+router.post("/all.json", (req, res) => {
+  let userId = req.body.user_id;
+  let sql = `select switch_serial, position, name from switch_buttons where user_id="${userId}"`;
+  let connector = new RDSConnector();
+  connector.query(sql, (err, result) => {
+    if(err) {
+      Responsor.sendError(req, res, err.errno);
+    } else {
+      res.json(result);
+    }
+  });
+});
+
+
 module.exports = router;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

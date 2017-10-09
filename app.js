@@ -21,7 +21,7 @@ app.use((req, res, next) => {
 });
 
 app.use("/", require("./src/routes/sign.js"));
-app.use("/add-device", require("./src/routes/add-device.js"));
+app.use("/switchs", require("./src/routes/switchs.js"));
 
 app.listen(port, ()=> {
   logger.log('start server');
