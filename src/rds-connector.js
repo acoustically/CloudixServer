@@ -14,6 +14,7 @@ module.exports = class RDSConnector {
     this.connector.connect((err) => {
       if (err) {
         this.logger.log("Error : RDS connect error");
+        this.connector.end()
         callback(err, null);
       } else {
         this.logger.log("Success : RDS connected");
@@ -24,11 +25,13 @@ module.exports = class RDSConnector {
             let json = JSON.stringify(err);
             this.logger.log(json);
             callback(err, null);
+            this.connector.end();
           } else {
             this.logger.log("Success : database query result : ");
             let json = JSON.stringify(res);
             this.logger.log(json);
             callback(null, res);
+            this.connector.end();
           }
         });
       }
@@ -40,6 +43,7 @@ module.exports = class RDSConnector {
       this.connector.connect((err) => {
         if (err) {
           this.logger.log("Error : RDS connect error");
+          this.connector.end();
         } else {
           this.logger.log("Success : RDS connected");
           this.logger.log("Query : " + sql);
@@ -49,11 +53,13 @@ module.exports = class RDSConnector {
               let json = JSON.stringify(err);
               this.logger.log(json);
               reject(err);
+              this.connector.end();
             } else {
               this.logger.log("Success : database query result : ");
               let json = JSON.stringify(res);
               this.logger.log(json);
               resolve(res);
+              this.connector.end();
             }
           });
         }
