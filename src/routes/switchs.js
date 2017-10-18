@@ -123,9 +123,24 @@ router.post("/all.json", (req, res) => {
   let connector = new RDSConnector();
   connector.query(sql, (err, result) => {
     if(err) {
-      Responsor.sendError(req, res, err.errno);
+      Responsor.sendError(req, res, "database error");
     } else {
       res.json(result);
+    }
+  });
+});
+
+router.post("/turn.json", (req, res) => {
+  let position = req.body.position;
+  let serial = req.body.serial;
+  let power = req.body.power;
+  let sql = `update switch_buttons set power=${power} where switch_serial="${serial}" and position=${position};`;
+  let connector = new RDSConnector();
+  connector.query(sql, (err, result) => {
+    if(err) {
+      Responsor.sendError(req, res, "database error");
+    } else {
+      Responsor.sendSuccess(req, res);
     }
   });
 });
