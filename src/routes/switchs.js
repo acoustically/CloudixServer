@@ -145,6 +145,18 @@ router.post("/turn.json", (req, res) => {
   });
 });
 
+router.post("/buttons.json", (req, res) => {
+  let serial = req.body.serial;
+  let sql = `select position, power from switch_buttons where switch_serial="${serial}";`;
+  let connector = new RDSConnector();
+  connector.query(sql, (err, result) => {
+    if(err) {
+      Responsor.sendError(req, res, "database error");
+    } else {
+      res.json(result);
+    }
+  });
+});
 
 
 module.exports = router;
