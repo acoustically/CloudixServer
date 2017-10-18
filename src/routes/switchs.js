@@ -119,7 +119,7 @@ router.post("/new-users-switchs.json", async (req, res) => {
 
 router.post("/all.json", (req, res) => {
   let userId = req.body.user_id;
-  let sql = `select switch_serial, position, name, power from switch_buttons where user_id="${userId}"`;
+  let sql = `select sb.switch_serial, sb.position, name, power from switch_buttons sb, users_switch_buttons usb where user_id="${userId}" and usb.switch_serial=sb.switch_serial and usb.position=sb.position;`;
   let connector = new RDSConnector();
   connector.query(sql, (err, result) => {
     if(err) {
